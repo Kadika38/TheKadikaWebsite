@@ -1,1 +1,166 @@
+header {
+    background-color: aquamarine;
+    height: 60px;
+    background-size: cover;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
 
+body {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+footer {
+    margin-left: 8px;
+    margin-right: -8px;
+}
+
+#section1 {
+    margin-right: -8px;
+}
+
+#headerList {
+    margin-top: 0px;
+}
+
+.headerListItem {
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+#title {
+    display: inline;
+    position: fixed;
+    left: 10px;
+    margin-left: 10px;
+    margin-top: 8.4px;
+    font-family: 'Palette Mosaic';
+    font-size: 30px;
+}
+
+#rightSide {
+    position: fixed;
+    right: 10px;
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+
+.noUnderline {
+    text-decoration: none;
+}
+
+.black {
+    color: black;
+}
+
+#links {
+    font-family: 'Palette Mosaic';
+    margin-right: -8px;
+}
+
+.row {
+    display: flex;
+    margin-left: 8px;
+}
+
+.column {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerColumn {
+    width: 20%;
+}
+
+.centerColumnSplit {
+    width: 10%;
+}
+
+#favoritesTitleColumn {
+    background-color: aqua;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+#dndTitleColumn {
+    background-color: lavender;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+#favoritesList {
+    list-style: none;
+}
+
+#favoritesListColumn {
+    background-color: aqua;
+}
+
+#dndList {
+    list-style: none;
+}
+
+#dndListColumn {
+    background-color: lavender;
+}
+
+#favoritesGradient {
+    height: 20px;
+    background-image: linear-gradient(to bottom, aquamarine, aqua);
+}
+
+#dndGradient {
+    background-image: linear-gradient(to bottom, aquamarine, lavender);
+}
+
+#centerTopGradientFavorites {
+    background-image: linear-gradient(to bottom left, aquamarine 55%, aqua);
+}
+
+#centerTopGradientDnd {
+    background-image: linear-gradient(to bottom right, aquamarine 55%, lavender);
+}
+
+#centerTitleGradient {
+    background-image: linear-gradient(to left, lavender, aquamarine, aqua);
+}
+
+#centerGradient {
+    background-image: linear-gradient(to left, lavender, aquamarine, aqua);
+}
+
+#favoritesGradientBottom {
+    height: 100px;
+    background-image: linear-gradient(to top, aquamarine, aqua);
+}
+
+#centerTopGradientFavoritesBottom {
+    background-image: linear-gradient(to top left, aquamarine 55%, aqua);
+}
+
+#centerTopGradientDndBottom {
+    background-image: linear-gradient(to top right, aquamarine 55%, lavender);
+}
+
+#dndGradientBottom {
+    background-image: linear-gradient(to top, aquamarine, lavender);
+}
+
+#footerGradient {
+    background-image: linear-gradient(to bottom, aquamarine, white);
+    height: 100px;
+}
+
+#section3 {
+    margin-right: -8px;
+}
