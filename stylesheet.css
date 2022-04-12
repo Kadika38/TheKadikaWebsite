@@ -1,34 +1,55 @@
 .flexy {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    background-color: aquamarine;
 }
 
-.oneOfTwo {
-    width: 50%;
+.spacy {
+    justify-content: space-evenly;
 }
 
-.oneOfThree {
-    width: 33%;
+/* Width size defining containers */
+.fullContainer {
+    width: 100%
 }
 
-.oneThirdContainer {
-    width: 33%;
-}
-
-.twoThirdsContainer {
+.sixtySixContainer {
     width: 66%;
 }
 
-.fullContainer {
-    width: 100%
+.sixtyContainer {
+    width: 60%;
+}
+
+.fiftyContainer {
+    width: 50%;
 }
 
 .fortyContainer {
     width: 40%;
 }
 
-.sixtyContainer {
-    width: 60%;
+.thirtyThreeContainer {
+    width: 33%;
+}
+
+.sixteenContainer {
+    width: 16%;
+}
+
+/* Character Name stuff */
+#characterNameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    height: 200px;
+}
+
+#characterName {
+    font-size: 40px;
+}
+
+/* New Character generation button stuff */
+#newCharacter {
+    width: 100%;
 }

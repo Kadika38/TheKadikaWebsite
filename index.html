@@ -16,102 +16,46 @@
 
 <body>
     <!--Uppermost Section with Character Name etc-->
-    <section class="flexy">
-        <div class="fortyContainer">
-            Character Name
+    <section id="titleSec">
+        <div id="characterNameContainer" class="thirtyThreeContainer">
+            <div id="characterName" >Character Name</div>
         </div>
-        <div class="sixtyContainer flexy">
-            <div class="oneOfThree">
-                Class & Level
-            </div>
-            <div class="oneOfThree">
-                Background
-            </div>
-            <div class="oneOfThree">
-                Player Name
-            </div>
-            <div class="oneOfThree">
-                Race
-            </div>
-            <div class="oneOfThree">
-                Alignment
-            </div>
-            <div class="oneOfThree">
-                Experience Points
-            </div>
+        <div class="thirtyThreeContainer">
+            <button id="newCharacter">Create New Character</button>
         </div>
     </section>
-
-    <section class="flexy">
-        <div class="oneOfThree flexy">
-            <div class="oneThirdContainer">
-                Stats
-            </div>
-            <div class="twoThirdsContainer">
-                <div class="fullContainer">
-                    Inspiration
-                </div>
-                <div class="fullContainer">
-                    Proficiency Bonus
-                </div>
-                <div class="fullContainer">
-                    Saving Throws
-                </div>
-                <div class="fullContainer">
-                    Skills
-                </div>
-            </div>
-            <div class="fullContainer">
-                Passive Perception
-            </div>
-            <div class="fullContainer">
-                Proficiencies and Languages
-            </div>
+    <section id="statContainer" class="fullContainer">
+        <div class="sixteenContainer">
+            <div >Strength: <span id="str"></span></div>
+            <div >Bonus: <span id="strBonus"></span></div>
         </div>
-        <div class="oneOfThree flexy">
-            <div class="oneOfThree">
-                AC
-            </div>
-            <div class="oneOfThree">
-                Initiative
-            </div>
-            <div class="oneOfThree">
-                Speed
-            </div>
-            <div class="fullContainer">
-                Hitpoints
-            </div>
-            <div class="oneOfTwo">
-                Hit Dice
-            </div>
-            <div class="oneOfTwo">
-                Death Saves
-            </div>
-            <div class="fullContainer">
-                Attacks and Spellcasting
-            </div>
-            <div class="fullContainer">
-                Equipment
-            </div>
+        <br>
+        <div class="sixteenContainer">
+            <div >Strength: <span id="dex"></span></div>
+            <div >Bonus: <span id="dexBonus"></span></div>
         </div>
-        <div class="oneOfThree">
-            <div class="fullContainer">
-                Personality Traits
-            </div>
-            <div class="fullContainer">
-                Ideals
-            </div>
-            <div class="fullContainer">
-                Bonds
-            </div>
-            <div class="fullContainer">
-                Flaws
-            </div>
-            <div class="fullContainer">
-                Features and Traits
-            </div>
+        <br>
+        <div class="sixteenContainer">
+            <div >Strength: <span id="con"></span></div>
+            <div >Bonus: <span id="conBonus"></span></div>
+        </div>
+        <br>
+        <div class="sixteenContainer">
+            <div >Strength: <span id="int"></span></div>
+            <div >Bonus: <span id="intBonus"></span></div>
+        </div>
+        <br>
+        <div class="sixteenContainer">
+            <div >Strength: <span id="wis"></span></div>
+            <div >Bonus: <span id="wisBonus"></span></div>
+        </div>
+        <br>
+        <div class="sixteenContainer">
+            <div >Strength: <span id="cha"></span></div>
+            <div >Bonus: <span id="chaBonus"></span></div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
