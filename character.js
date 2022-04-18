@@ -3,8 +3,7 @@
 // Character Object
 var character = {
     //name
-    firstName: "",
-    lastName: "",
+    charName: "",
     title: "",
     //stats
     str: {
@@ -534,6 +533,8 @@ var character = {
         this.sleightOfHand.calcSkill();
         this.stealth.calcSkill();
         this.survival.calcSkill();
+        //console log for testing
+        console.log(character);
     },
     //functions for passing in parameters
     addStats: function(s, d, co, i, w, ch) {
@@ -552,9 +553,8 @@ var character = {
         this.wis.stat += w;
         this.cha.stat += ch;
     },
-    addName: function(string1, string2) {
-        this.firstName = string1;
-        this.lastName = string2;
+    addName: function(string1) {
+        this.charName = string1;
     },
     addSize: function(string1) {
         this.size = string1;
@@ -840,43 +840,6 @@ var character = {
     
 };
 
-//arrays
-
-//ALL VISIONS
-var visionsArray = [
-    {key: "darkvision", description: "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."},
-];
-
-//ALL RACE TRAITS
-//delete test later
-var raceTraitsArray = [
-    {key: "test", description: "testing", use: function() {
-        character.addMoney(50);
-    }}
-];
-
-//ALL FEATS
-var featsArray = [
-
-];
-
-//ALL CLASS FEATURES
-var classFeaturesArray = [
-
-];
-
-//race arrays format [name, size, speed, str+, dex+, con+, int+, wis+, cha+, langs, save profs, skill profs, equip profs, tool profs, visions, traits, feats]
-//race array minimum size ["", "", 0, [0, 0, 0, 0, 0, 0], [], [], [], [], [], []]
-var dwarfArray = ["dwarf", "medium", 25, ["notChoices", 0, 0, 2, 0, 0, 0], ["notChoices", "common", "dwarvish"], ["notChoices"], ["notChoices"], ["notChoices", "battleaxe", "handaxe", "light hammer", "warhammer"], ["smiths tools", "brewers supplies", "masons tools"], ["notChoices", "darkvision"], ["notChoices", "dwarven resilience", "stonecunning"], ["notChoices"]];
-
-//background arrays format [name, skill profs, languages, equip profs, inventory, money]
-//background array minimum size ["", [], [], [], [], 0]
-var fisherArray = ["fisher", ["notChoices", 5, 17], ["orc", "allOtherLangs"], ["notChoices"], [["notChoices", "fishing tackle", "net", "favorite fishing lure", "travelers clothes"], ["notChoices", "fishing tackle", "net", "oiled leather wading boots", "travelers clothes"]], 10];
-
-//class arrays format [name, hp base, hp upper, langs, save profs, skill profs, equip profs, inventory, class features]
-var rogueArray = ["rogue", 8, 5, ["notChoices"], ["notChoices", 1, 3], ["chooseNumChoice", 4, 0, 3, 4, 6, 7, 8, 11, 12, 13, 15, 16], ["notChoices", "simple weapons", "hand crossbows", "longswords", "rapiers", "shortswords", "thieves tools"], ["multipleChoices", ["rapier", "shortsword"], [["notChoices", "shortbow", "quiver", "20 arrows"], "shortsword"], ["burglars pack", "dungeoneers pack", "explorers pack"], ["notChoices", "leather armor", "dagger", "dagger", "thieves tools"]], ["notChoices", "expertise", "sneak attack", "thieves cant"]];
-
-
 //choice functions
 function makeChoiceSimple(anArray2) {
     //show user choices
@@ -961,69 +924,10 @@ function ifIsChoice(anArray) {
     return pickedArray;
 }
 
-/* character.addName("Ashley", "Appleguard");
+/* character.addName("Ashley Appleguard");
 character.addStats(16, 18, 10, 16, 9, 8);
 character.addRace(chooseTest(dwarfArray));
 character.addBackground(chooseTest(fisherArray));
 character.addClass(chooseTest(rogueArray));
 character.recalculate();
 character.printCharacter(); */
-
-// Making the New Character button function
-var newCharacterBtn = document.querySelector("#newCharacter");
-
-newCharacterBtn.addEventListener("click", createNewCharacter);
-
-//spot vars
-var statContainerSpot = document.querySelector("#statContainer");
-var nameSpot = document.querySelector("#characterName");
-var strSpot = document.querySelector("#str");
-var strBonusSpot = document.querySelector("#strBonus");
-var dexSpot = document.querySelector("#dex");
-var dexBonusSpot = document.querySelector("#dexBonus");
-var conSpot = document.querySelector("#con");
-var conBonusSpot = document.querySelector("#conBonus");
-var intSpot = document.querySelector("#int");
-var intBonusSpot = document.querySelector("#intBonus");
-var wisSpot = document.querySelector("#wis");
-var wisBonusSpot = document.querySelector("#wisBonus");
-var chaSpot = document.querySelector("#cha");
-var chaBonusSpot = document.querySelector("#chaBonus");
-
-//element creations vars
-var divy = document.createElement("div");
-
-// Full process for inputing New Character info
-function createNewCharacter() {
-    //take input of character name
-    fn = prompt("Characters first name: ");
-    ln = prompt("Characters last name: ");
-    //add name to character object
-    character.addName(fn, ln);
-    //set name to visual
-    nameSpot.innerHTML= (character.firstName + " " + character.lastName);
-
-    //take input of character stats
-    strInput = prompt("Strength: ");
-    dexInput = prompt("Dexterity: ");
-    conInput = prompt("Constitution: ");
-    intInput = prompt("Intelligence: ");
-    wisInput = prompt("Wisdom: ");
-    chaInput = prompt("Charisma: ");
-    //add stats to character object
-    character.addStats(strInput, dexInput, conInput, intInput, wisInput, chaInput);
-    character.recalculate();
-    //set stats to visuals
-    strSpot.innerHTML = character.str.stat;
-    strBonusSpot.innerHTML = character.str.bonus;
-    dexSpot.innerHTML = character.dex.stat;
-    dexBonusSpot.innerHTML = character.dex.bonus;
-    conSpot.innerHTML = character.con.stat;
-    conBonusSpot.innerHTML = character.con.bonus;
-    intSpot.innerHTML = character.int.stat;
-    intBonusSpot.innerHTML = character.int.bonus;
-    wisSpot.innerHTML = character.wis.stat;
-    wisBonusSpot.innerHTML = character.wis.bonus;
-    chaSpot.innerHTML = character.cha.stat;
-    chaBonusSpot.innerHTML = character.cha.bonus;
-}

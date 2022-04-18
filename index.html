@@ -8,54 +8,16 @@
     <link rel="stylesheet" href="reset.css">
     <!--Stylesheet-->
     <link rel="stylesheet" href="stylesheet.css">
-    <!--Pallet Mosaic Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Uppermost Section with Character Name etc-->
-    <section id="titleSec">
-        <div id="characterNameContainer" class="thirtyThreeContainer">
-            <div id="characterName" >Character Name</div>
-        </div>
-        <div class="thirtyThreeContainer">
-            <button id="newCharacter">Create New Character</button>
-        </div>
+    <section id="landing">
+        <button id="newCharacterBtn">Create New Character</button>
     </section>
-    <section id="statContainer" class="fullContainer">
-        <div class="sixteenContainer">
-            <div >Strength: <span id="str"></span></div>
-            <div >Bonus: <span id="strBonus"></span></div>
-        </div>
-        <br>
-        <div class="sixteenContainer">
-            <div >Strength: <span id="dex"></span></div>
-            <div >Bonus: <span id="dexBonus"></span></div>
-        </div>
-        <br>
-        <div class="sixteenContainer">
-            <div >Strength: <span id="con"></span></div>
-            <div >Bonus: <span id="conBonus"></span></div>
-        </div>
-        <br>
-        <div class="sixteenContainer">
-            <div >Strength: <span id="int"></span></div>
-            <div >Bonus: <span id="intBonus"></span></div>
-        </div>
-        <br>
-        <div class="sixteenContainer">
-            <div >Strength: <span id="wis"></span></div>
-            <div >Bonus: <span id="wisBonus"></span></div>
-        </div>
-        <br>
-        <div class="sixteenContainer">
-            <div >Strength: <span id="cha"></span></div>
-            <div >Bonus: <span id="chaBonus"></span></div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+
+    <script src="character.js"></script>
+    <script src="storageArrays.js"></script>
+    <script src="visuals.js"></script>
 </body>
 
 </html>

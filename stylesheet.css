@@ -1,55 +1,38 @@
-.flexy {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.spacy {
-    justify-content: space-evenly;
-}
-
-/* Width size defining containers */
-.fullContainer {
-    width: 100%
-}
-
-.sixtySixContainer {
-    width: 66%;
-}
-
-.sixtyContainer {
-    width: 60%;
-}
-
-.fiftyContainer {
-    width: 50%;
-}
-
-.fortyContainer {
-    width: 40%;
-}
-
-.thirtyThreeContainer {
-    width: 33%;
-}
-
-.sixteenContainer {
-    width: 16%;
-}
-
-/* Character Name stuff */
-#characterNameContainer {
+#landing {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     height: 200px;
 }
 
-#characterName {
-    font-size: 40px;
+#characterSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: aqua;
 }
 
-/* New Character generation button stuff */
-#newCharacter {
+#characterNameDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    background-color: aquamarine;
+}
+
+#characterNameSpot {
+    padding-left: 10px;
+}
+
+#sixStatsDiv {
+    width: 60%;
+    background-color: rgb(255, 206, 114);
+}
+
+.oneOfSixStatsDiv {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
