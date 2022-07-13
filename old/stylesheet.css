@@ -31,8 +31,18 @@
     background-color: rgb(255, 206, 114);
 }
 
-.oneOfSixStatsDiv {
+.fullFlexWrapDiv {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+
+#savesDiv {
+    width: 60%;
+    background-color: lavender;
+}
+
+#skillsDiv {
+    width: 60%;
+    background-color: lightcyan;
 }

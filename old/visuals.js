@@ -37,7 +37,7 @@ function createCharacterSixStatsSection() {
     //str sec
     createDiv(sixStatsDiv, "strDiv");
     var strDiv = document.querySelector("#strDiv");
-    strDiv.setAttribute("class", "oneOfSixStatsDiv")
+    strDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(strDiv, "Strength:", "strP");
     var strP = document.querySelector("#strP");
     createInput(strDiv, "strInput");
@@ -50,7 +50,7 @@ function createCharacterSixStatsSection() {
     //dex sec
     createDiv(sixStatsDiv, "dexDiv");
     var dexDiv = document.querySelector("#dexDiv");
-    dexDiv.setAttribute("class", "oneOfSixStatsDiv")
+    dexDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(dexDiv, "Dexterity:", "dexP");
     var dexP = document.querySelector("#dexP");
     createInput(dexDiv, "dexInput");
@@ -63,7 +63,7 @@ function createCharacterSixStatsSection() {
     //con sec
     createDiv(sixStatsDiv, "conDiv");
     var conDiv = document.querySelector("#conDiv");
-    conDiv.setAttribute("class", "oneOfSixStatsDiv")
+    conDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(conDiv, "Constitution:", "conP");
     var conP = document.querySelector("#conP");
     createInput(conDiv, "conInput");
@@ -76,7 +76,7 @@ function createCharacterSixStatsSection() {
     //int sec
     createDiv(sixStatsDiv, "intDiv");
     var intDiv = document.querySelector("#intDiv");
-    intDiv.setAttribute("class", "oneOfSixStatsDiv")
+    intDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(intDiv, "Intelligence:", "intP");
     var intP = document.querySelector("#intP");
     createInput(intDiv, "intInput");
@@ -89,7 +89,7 @@ function createCharacterSixStatsSection() {
     //wis sec
     createDiv(sixStatsDiv, "wisDiv");
     var wisDiv = document.querySelector("#wisDiv");
-    wisDiv.setAttribute("class", "oneOfSixStatsDiv")
+    wisDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(wisDiv, "Wisdom:", "wisP");
     var wisP = document.querySelector("#wisP");
     createInput(wisDiv, "wisInput");
@@ -102,7 +102,7 @@ function createCharacterSixStatsSection() {
     //cha sec
     createDiv(sixStatsDiv, "chaDiv");
     var chaDiv = document.querySelector("#chaDiv");
-    chaDiv.setAttribute("class", "oneOfSixStatsDiv")
+    chaDiv.setAttribute("class", "fullFlexWrapDiv")
     createPwithId(chaDiv, "Charisma:", "chaP");
     var chaP = document.querySelector("#chaP");
     createInput(chaDiv, "chaInput");
@@ -152,9 +152,112 @@ function submitStats() {
 }
 
 function createSavesSec() {
-    console.log("hi");
+    createDiv(characterSec, "savesDiv");
+    var savesDiv = document.querySelector("#savesDiv");
+
+    createDiv(savesDiv, "strSaveDiv");
+    var strSaveDiv = document.querySelector("#strSaveDiv");
+    createPwithId(strSaveDiv, "Strength Save: " + character.strSave.value, "strSaveP");
+
+    createDiv(savesDiv, "dexSaveDiv");
+    var dexSaveDiv = document.querySelector("#dexSaveDiv");
+    createPwithId(dexSaveDiv, "Dexterity Save: " + character.dexSave.value, "dexSaveP");
+
+    createDiv(savesDiv, "conSaveDiv");
+    var conSaveDiv = document.querySelector("#conSaveDiv");
+    createPwithId(conSaveDiv, "Constitution Save: " + character.conSave.value, "conSaveP");
+
+    createDiv(savesDiv, "intSaveDiv");
+    var intSaveDiv = document.querySelector("#intSaveDiv");
+    createPwithId(intSaveDiv, "Intelligence Save: " + character.intSave.value, "intSaveP");
+
+    createDiv(savesDiv, "wisSaveDiv");
+    var wisSaveDiv = document.querySelector("#wisSaveDiv");
+    createPwithId(wisSaveDiv, "Wisdom Save: " + character.wisSave.value, "wisSaveP");
+
+    createDiv(savesDiv, "chaSaveDiv");
+    var chaSaveDiv = document.querySelector("#chaSaveDiv");
+    createPwithId(chaSaveDiv, "Charisma Save: " + character.chaSave.value, "chaSaveP");
+
+    createSkillsSec();
 }
 
+function createSkillsSec() {
+    createDiv(characterSec, "skillsDiv");
+    var skillsDiv = document.querySelector("#skillsDiv");
+
+    createDiv(skillsDiv, "acrobaticsDiv");
+    var acrobaticsDiv = document.querySelector("#acrobaticsDiv");
+    createPwithId(acrobaticsDiv, "Acrobatics: " + character.acrobatics.value, "acrobaticsP");
+
+    createDiv(skillsDiv, "animalHandlingDiv");
+    var animalHandlingDiv = document.querySelector("#animalHandlingDiv");
+    createPwithId(animalHandlingDiv, "Animal Handling: " + character.animalHandling.value, "animalHandlingP");
+    
+    createDiv(skillsDiv, "arcanaDiv");
+    var arcanaDiv = document.querySelector("#arcanaDiv");
+    createPwithId(arcanaDiv, "Arcana: " + character.arcana.value, "arcanaP");
+
+    createDiv(skillsDiv, "athleticsDiv");
+    var athleticsDiv = document.querySelector("#athleticsDiv");
+    createPwithId(athleticsDiv, "Athletics: " + character.athletics.value, "athleticsP");
+
+    createDiv(skillsDiv, "deceptionDiv");
+    var deceptionDiv = document.querySelector("#deceptionDiv");
+    createPwithId(deceptionDiv, "Deception: " + character.deception.value, "deceptionP");
+
+    createDiv(skillsDiv, "historyDiv");
+    var historyDiv = document.querySelector("#historyDiv");
+    createPwithId(historyDiv, "History: " + character.history.value, "historyP");
+
+    createDiv(skillsDiv, "insightDiv");
+    var insightDiv = document.querySelector("#insightDiv");
+    createPwithId(insightDiv, "Insight: " + character.insight.value, "insightP");
+
+    createDiv(skillsDiv, "intimidationDiv");
+    var intimidationDiv = document.querySelector("#intimidationDiv");
+    createPwithId(intimidationDiv, "Intimidation: " + character.intimidation.value, "intimidationP");
+
+    createDiv(skillsDiv, "investigationDiv");
+    var investigationDiv = document.querySelector("#investigationDiv");
+    createPwithId(investigationDiv, "Investigation: " + character.investigation.value, "investigationP");
+    
+    createDiv(skillsDiv, "medicineDiv");
+    var medicineDiv = document.querySelector("#medicineDiv");
+    createPwithId(medicineDiv, "Medicine: " + character.medicine.value, "medicineP");
+
+    createDiv(skillsDiv, "natureDiv");
+    var natureDiv = document.querySelector("#natureDiv");
+    createPwithId(natureDiv, "Nature: " + character.nature.value, "natureP");
+
+    createDiv(skillsDiv, "perceptionDiv");
+    var perceptionDiv = document.querySelector("#perceptionDiv");
+    createPwithId(perceptionDiv, "Perception: " + character.perception.value, "perceptionP");
+
+    createDiv(skillsDiv, "performanceDiv");
+    var performanceDiv = document.querySelector("#performanceDiv");
+    createPwithId(performanceDiv, "Performance: " + character.performance.value, "performanceP");
+
+    createDiv(skillsDiv, "persuasionDiv");
+    var persuasionDiv = document.querySelector("#persuasionDiv");
+    createPwithId(persuasionDiv, "Persuasion: " + character.persuasion.value, "persuasionP");
+
+    createDiv(skillsDiv, "religionDiv");
+    var religionDiv = document.querySelector("#religionDiv");
+    createPwithId(religionDiv, "Religion: " + character.religion.value, "religionP");
+
+    createDiv(skillsDiv, "sleightOfHandDiv");
+    var sleightOfHandDiv = document.querySelector("#sleightOfHandDiv");
+    createPwithId(sleightOfHandDiv, "Sleight of Hand: " + character.sleightOfHand.value, "sleightOfHandP");
+
+    createDiv(skillsDiv, "stealthDiv");
+    var stealthDiv = document.querySelector("#stealthDiv");
+    createPwithId(stealthDiv, "Stealth: " + character.stealth.value, "stealthP");
+
+    createDiv(skillsDiv, "survivalDiv");
+    var survivalDiv = document.querySelector("#survivalDiv");
+    createPwithId(survivalDiv, "Survival: " + character.survival.value, "survivalP");
+}
 
 
 //helper funcs
