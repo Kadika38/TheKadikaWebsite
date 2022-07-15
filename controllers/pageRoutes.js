@@ -9,9 +9,17 @@ router.get('/', (req, res) => {
     }
 });
 
-router.get('/numtwo', (req, res) => {
+router.get('/login', (req, res) => {
     try {
-        res.sendFile(path.join(__dirname, '../views/numtwo.html'));
+        res.sendFile(path.join(__dirname, '../views/login.html'));
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+router.get('/newcharacter', (req, res) => {
+    try {
+        res.sendFile(path.join(__dirname, '../views/newcharacter.html'));
     } catch (err) {
         res.status(500).json(err);
     }
