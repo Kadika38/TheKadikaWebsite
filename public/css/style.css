@@ -1,0 +1,97 @@
+/* colors */
+:root {
+    --teaGreen: #DEF2C8;
+    --darkPurple: #370031;
+    --deepSpaceSparkle: #395C6B;
+    --opal: #BCD0C7;
+    --antiqueRuby: #832232;
+}
+
+/* html {
+    
+} */
+
+/* placement */
+.flexy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toSides {
+    justify-content: space-between;
+}
+
+.spaceEqually {
+    justify-content: space-evenly;
+}
+
+.toCenter {
+    justify-content: center;
+}
+
+.fullMargin-2 {
+    margin: 2px;
+}
+
+.fullMargin-5 {
+    margin: 5px;
+}
+
+.fullMargin-15 {
+    margin: 15px;
+}
+
+.fullPadding-5 {
+    padding: 5px;
+}
+
+.fullPadding-15 {
+    padding: 15px;
+}
+
+/* coloring */
+.darkPurpleBack {
+    background-color: var(--darkPurple);
+}
+
+.white {
+    color: white;
+}
+
+/* sizing */
+.font-5 {
+    font-size: 5px;
+}
+
+.font-10 {
+    font-size: 10px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-25 {
+    font-size: 25px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-35 {
+    font-size: 35px;
+}
+
+.font-40 {
+    font-size: 40px;
+}
+
+/* decoration */
+.noDeco {
+    text-decoration: none;
+}
