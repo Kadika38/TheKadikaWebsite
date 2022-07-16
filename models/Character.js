@@ -27,6 +27,30 @@ Character.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
+        str: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        dex: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        con: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        int: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        wis: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        cha: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
         
     },
     {
