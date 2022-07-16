@@ -11,6 +11,14 @@ Character.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        user_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+        },
         first_name: {
             type: DataTypes.STRING,
             allowNull: true,
