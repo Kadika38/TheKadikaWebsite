@@ -33,6 +33,30 @@ Choice.init(
                 key: 'id',
             },
         },
+        race_id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            references: {
+                model: 'race',
+                key: 'id',
+            },
+        },
+        /* class_id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            references: {
+                model: 'class',
+                key: 'id',
+            },
+        }, */
+        feat_id: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+            references: {
+                model: 'feat',
+                key: 'id',
+            },
+        },
     },
     {
         sequelize,

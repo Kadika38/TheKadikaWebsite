@@ -20,10 +20,6 @@ Feat.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        choice_id: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
     },
     {
         sequelize,
