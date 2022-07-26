@@ -14,7 +14,7 @@ Choice.init(
         },
         //info
         info: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         //pick how many?

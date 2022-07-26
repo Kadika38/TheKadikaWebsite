@@ -26,14 +26,14 @@ Thing.init(
             },
         },
         info: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
         other_stat: {
             type: DataTypes.STRING,
             allowNull: true,
             validate: {
-                isIn: [['size', 'speed']],
+                isIn: [['size', 'speed', 'climb', 'fly']],
             },
         },
         size: {
@@ -41,6 +41,14 @@ Thing.init(
             allowNull: true,
         },
         speed: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        climb: {
+            type: DataTypes.INTEGER,
+            allowNull: true,
+        },
+        fly: {
             type: DataTypes.INTEGER,
             allowNull: true,
         },

@@ -19,7 +19,7 @@ Race.init(
             allowNull: false,
         },
         info: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
     },
