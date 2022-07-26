@@ -16,7 +16,7 @@ const thingSeeds = [
         stat_bonus: 1,
     },
     {
-        name: 'size',
+        name: 'size-Tabaxi',
         type: 'other stat',
         info: 'Tabaxi are taller on average than humans and relatively slender.',
         other_stat: 'size',
@@ -37,10 +37,13 @@ const thingSeeds = [
         climb: 20,
     },
     {
-        name: 'age',
+        name: 'age-Tabaxi',
         type: 'info',
         info: 'Tabaxi have lifespans equivalent to humans.',
     },
+    {
+        name: 'Darkvision-Tabaxi'
+    }
 ];
 
 const seedThings = () => Thing.bulkCreate(thingSeeds);
