@@ -20,7 +20,7 @@ const thingSeeds = [
         type: 'other stat',
         info: 'Tabaxi are taller on average than humans and relatively slender.',
         other_stat: 'size',
-        size: 'Medium',
+        size: 'medium',
     },
     {
         name: 'speed',
@@ -46,7 +46,7 @@ const thingSeeds = [
         type: 'proficiency',
         info: 'You have a cat\'s keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\'t discern color in darkness, only shades of gray.',
         proficiency_type: 'vision',
-        proficiency: 'Darkvision',
+        proficiency: 'darkvision',
     },
     {
         name: 'Feline Agility',
@@ -71,6 +71,34 @@ const thingSeeds = [
         info: 'You are proficient in the stealth skill.',
         proficiency_type: 'skill',
         proficiency: 'stealth',
+    },
+    {
+        name: 'Common Language Proficiency',
+        type: 'proficiency',
+        info: 'You can speak, read, and write Common',
+        proficiency_type: 'language',
+        proficiency: 'common',
+    },
+    {
+        name: 'Orc Language Proficiency',
+        type: 'proficiency',
+        info: 'You can speak, read, and write Orc',
+        proficiency_type: 'language',
+        proficiency: 'orc',
+    },
+    {
+        name: 'Giant Language Proficiency',
+        type: 'proficiency',
+        info: 'You can speak, read, and write Giant',
+        proficiency_type: 'language',
+        proficiency: 'giant',
+    },
+    {
+        name: 'Elvish Language Proficiency',
+        type: 'proficiency',
+        info: 'You can speak, read, and write Elvish',
+        proficiency_type: 'language',
+        proficiency: 'elvish',
     },
 ];
 

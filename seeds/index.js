@@ -2,6 +2,8 @@ const seedUsers = require('./user-seeds');
 const seedRaces = require('./race-seeds');
 const seedThings = require('./thing-seeds');
 const seedRaceThings = require('./racething-seeds');
+const seedChoices = require('./choice-seeds');
+const seedOptions = require('./option-seeds');
 
 /* const seedCharacters = require('./character-seeds'); */
 
@@ -22,6 +24,12 @@ const seedAll = async () => {
 
     await seedRaceThings();
     console.log('\n----- RACE-THING-RELATIONSHIPS SYNCED -----\n');
+
+    await seedChoices();
+    console.log('\n----- CHOICES SYNCED -----\n');
+
+    await seedOptions();
+    console.log('\n----- OPTIONS SYNCED -----\n');
 
     /* await seedCharacters();
     console.log('\n----- CHARACTERS SYNCED -----\n'); */
