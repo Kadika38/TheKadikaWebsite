@@ -51,7 +51,6 @@ Character.init(
             type: DataTypes.INTEGER,
             allowNull: true,
         },
-        
     },
     {
         sequelize,
