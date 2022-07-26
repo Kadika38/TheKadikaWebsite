@@ -6,6 +6,7 @@ const Feat = require('./Feat');
 const Option = require('./Option');
 const Race = require('./Race');
 const Thing = require('./Thing');
+const RaceThing = require('./RaceThing');
 
 // Characters belong to ONE User
 Character.belongsTo(User, {
@@ -25,6 +26,14 @@ Choice.belongsTo(Race, {
 // Races have many Choices
 Race.hasMany(Choice, {
     foreignKey: 'race_id',
+});
+
+Thing.belongsToMany(Race, {
+    through: RaceThing,
+});
+
+Race.hasMany(Thing, {
+    through: RaceThing,
 });
 
 // Choices belong to ONE Class
