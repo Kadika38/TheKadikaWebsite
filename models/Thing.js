@@ -52,6 +52,13 @@ Thing.init(
             type: DataTypes.INTEGER,
             allowNull: true,
         },
+        proficiency_type: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+                isIn: [['vision', 'language', 'item', 'skill', 'save']],
+            },
+        },
         proficiency: {
             type: DataTypes.STRING,
             allowNull: true,

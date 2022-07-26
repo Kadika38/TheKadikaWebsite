@@ -42,8 +42,36 @@ const thingSeeds = [
         info: 'Tabaxi have lifespans equivalent to humans.',
     },
     {
-        name: 'Darkvision-Tabaxi'
-    }
+        name: 'Darkvision-Tabaxi',
+        type: 'proficiency',
+        info: 'You have a cat\'s keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\'t discern color in darkness, only shades of gray.',
+        proficiency_type: 'vision',
+        proficiency: 'Darkvision',
+    },
+    {
+        name: 'Feline Agility',
+        type: 'trait',
+        info: 'Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can\'t use it again until you move 0 feet on one of your turns.',
+    },
+    {
+        name: 'Cat\'s Claws',
+        type: 'trait',
+        info: 'Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.',
+    },
+    {
+        name: 'Perception Proficiency',
+        type: 'proficiency',
+        info: 'You are proficient in the perception skill.',
+        proficiency_type: 'skill',
+        proficiency: 'perception',
+    },
+    {
+        name: 'Stealth Proficiency',
+        type: 'proficiency',
+        info: 'You are proficient in the stealth skill.',
+        proficiency_type: 'skill',
+        proficiency: 'stealth',
+    },
 ];
 
 const seedThings = () => Thing.bulkCreate(thingSeeds);
