@@ -5,7 +5,12 @@ class RaceThing extends Model {}
 
 RaceThing.init(
     {
-        //id
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+        },
         race_id: {
             type: DataTypes.INTEGER,
             allowNull: false,

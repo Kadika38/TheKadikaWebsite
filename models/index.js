@@ -28,11 +28,8 @@ Race.hasMany(Choice, {
     foreignKey: 'race_id',
 });
 
+// Things belong to many Races through RaceThing
 Thing.belongsToMany(Race, {
-    through: RaceThing,
-});
-
-Race.hasMany(Thing, {
     through: RaceThing,
 });
 
@@ -105,4 +102,5 @@ module.exports = {
     Option,
     Race,
     Thing,
+    RaceThing,
 };
