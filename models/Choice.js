@@ -1,5 +1,3 @@
-// references earlier choices, referenced by Options or Choices
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
