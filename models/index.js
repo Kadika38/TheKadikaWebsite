@@ -7,6 +7,7 @@ const Option = require('./Option');
 const Race = require('./Race');
 const Thing = require('./Thing');
 const RaceThing = require('./RaceThing');
+const Class = require('./Class');
 
 // Characters belong to ONE User
 Character.belongsTo(User, {
@@ -103,4 +104,5 @@ module.exports = {
     Race,
     Thing,
     RaceThing,
+    Class,
 };
