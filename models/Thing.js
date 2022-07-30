@@ -22,7 +22,7 @@ Thing.init(
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                isIn: [['info', 'other stat', 'proficiency', 'trait', 'feat', 'stat bonus']],
+                isIn: [['info', 'other stat', 'proficiency', 'trait', 'feat', 'stat bonus', 'expertise']],
             },
         },
         info: {
