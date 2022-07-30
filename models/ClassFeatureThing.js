@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class FeatThing extends Model {}
+class ClassFeatureThing extends Model {}
 
-FeatThing.init(
+ClassFeatureThing.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -11,11 +11,11 @@ FeatThing.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        feat_id: {
+        class_feature_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: 'feat',
+                model: 'classfeature',
                 key: 'id',
             },
         },
@@ -33,8 +33,8 @@ FeatThing.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'featthing',
+        modelName: 'classfeaturething',
     }
 );
 
-module.exports = FeatThing;
+module.exports = ClassFeatureThing;
