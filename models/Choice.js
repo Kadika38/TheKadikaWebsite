@@ -39,14 +39,14 @@ Choice.init(
                 key: 'id',
             },
         },
-        /* class_id: {
+        class_feature_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: 'class',
+                model: 'classfeature',
                 key: 'id',
             },
-        }, */
+        },
         feat_id: {
             type: DataTypes.INTEGER,
             allowNull: true,
