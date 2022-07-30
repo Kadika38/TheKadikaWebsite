@@ -8,6 +8,10 @@ const Race = require('./Race');
 const Thing = require('./Thing');
 const RaceThing = require('./RaceThing');
 const Class = require('./Class');
+const FeatThing = require('./FeatThing');
+const ClassThing = require('./ClassThing');
+const ClassFeature = require('./ClassFeature');
+const ClassFeatureThing = require('./ClassFeatureThing');
 
 // Characters belong to ONE User
 Character.belongsTo(User, {
@@ -105,4 +109,8 @@ module.exports = {
     Thing,
     RaceThing,
     Class,
+    FeatThing,
+    ClassThing,
+    ClassFeature,
+    ClassFeatureThing,
 };
