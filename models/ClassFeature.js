@@ -20,6 +20,10 @@ ClassFeature.init(
             type: DataTypes.TEXT,
             allowNull: false,
         },
+        level_req: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
     },
     {
         sequelize,
