@@ -1,5 +1,5 @@
 Fix List:
-    
+    - Rogue expertise reflected in skill bonus values
 
 Future Development:
 
