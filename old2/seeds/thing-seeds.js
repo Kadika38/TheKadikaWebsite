@@ -100,6 +100,41 @@ const thingSeeds = [
         proficiency_type: 'language',
         proficiency: 'elvish',
     },
+    {
+        name: 'Perception Expertise',
+        type: 'expertise',
+        info: 'You are an expert in the perception skill.',
+        proficiency_type: 'skill',
+        proficiency: 'perception',
+    },
+    {
+        name: 'Stealth Expertise',
+        type: 'expertise',
+        info: 'You are an expert in the stealth skill.',
+        proficiency_type: 'skill',
+        proficiency: 'stealth',
+    },
+    {
+        name: 'Sleight of Hand Expertise',
+        type: 'expertise',
+        info: 'You are an expert in the slight of hand skill.',
+        proficiency_type: 'skill',
+        proficiency: 'sleight of hand'
+    },
+    {
+        name: 'Investigation Expertise',
+        type: 'expertise',
+        info: 'You are an expert in the investigation skill.',
+        proficiency_type: 'skill',
+        proficiency: 'investigation',
+    },
+    {
+        name: 'Thieves\' Tools Expertise',
+        type: 'expertise',
+        info: 'You are an expert with thieves\' tools.',
+        proficiency_type: 'item',
+        proficiency: 'thieves\' tools',
+    },
 ];
 
 const seedThings = () => Thing.bulkCreate(thingSeeds);
