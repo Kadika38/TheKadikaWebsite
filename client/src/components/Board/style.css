@@ -1,0 +1,7 @@
+.board-outer {
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+}
